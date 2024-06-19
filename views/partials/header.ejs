@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e0cd5888f.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg pt-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand logoBackground" href="#">
+                      bp.
+                    </a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><a href="#" class="nav-link"><i class="fa-solid fa-bars fa-lg"></i></a></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 grid gap-0 column-gap-5 w-50 d-flex justify-content-between">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="/create" id="create"><i class="fa-solid fa-plus fa-lg"></i></a>
+                      </li>
+                      <li class="nav-item userIcon" id="userIconId">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user fa-lg "></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+
+            <div class="user" id="userId">
+              <div class="container-user">
+                  <div class="item-user d-flex">
+                    <div class="userIcon "><i class="fa-solid fa-user fa-lg"></i></div>
+                    <p class="user-text mx-3">UserName</p>
+                  </div>
+
+                  <hr>
+
+                  <div class="item-user">
+                    <a href="#"><p class="user-text">Your Posts</p></a>
+                  </div>
+
+                  <div class="item-user">
+                    <a href="/"><p class="user-text">Sign Out</p></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+
+        <script>
+          document.getElementById('userIconId').addEventListener('click', function () {
+                let userElement = document.getElementsByClassName('user')[0];
+                userElement.style.display = (userElement.style.display === 'none' || userElement.style.display === '') ? 'block' : 'none';
+        });
+        </script>
+

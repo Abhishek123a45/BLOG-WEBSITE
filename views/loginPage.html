@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+    
+    body{
+        background-color: whitesmoke;
+    }
+    
+    .container-fluid{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            
+        }
+
+    .container-login{
+        border: 2px solid #B3FFAE;
+        position: relative;
+    }
+
+    .container-login::before{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.5rem;
+        background-color: #B3FFAE;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+    }
+
+    .logo{
+        height: 3rem;
+    }
+
+    .btn-primary{
+        background-color: #B3FFAE;
+        transition: 0.3s all;
+        border: none;
+        color: #313030;
+    }
+
+    .btn-primary:hover{
+        background-color: #9dff96;
+        color: #313030;
+    }
+
+    .signIn-text{
+        color: #313030;
+    }
+
+    .form-control:focus{
+        box-shadow: none;
+        border: 1px solid #B3FFAE;
+        color: #B3FFAE;
+    }
+
+    </style>
+
+    <title>Bloggers Point</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="container-login px-5 py-5">
+
+            <div class="logo-container">
+                <div class="text-left py-3">
+                    <img src="images/logo.png" alt="logo" class="logo ">
+                </div>
+
+                <div class="signIn-text py-3">
+                    <h3>Welcome,</h3>
+                    <h3>Sign In To Continue</h3>
+                </div>
+            </div>
+
+            <div class="form">
+                <form action="/login" method="POST">
+
+                    <div class="mb-3 py-2">
+                        <input type="email" name = "email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Address">
+                    </div>
+
+                    <div class="mb-3 py-2">
+                        <input type="password" name = "password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary my-2 w-100 rounded-0">Login</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

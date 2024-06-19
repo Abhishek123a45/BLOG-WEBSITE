@@ -1,0 +1,18 @@
+<%-include("partials/header.ejs") %>
+
+<section class="contact-container">
+    <div class="container-fluid px-5">
+        <h1 class="contact-title">Contact Us</h1>
+        
+        <div class="form">
+            <form class="form-contact">
+                <input type="text" name="name" placeholder="Enter Name">
+                <input type="email" name = "email" placeholder="Enter Email">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                <input type="submit" class="submit-contact">
+            </form>
+        </div>
+      </div>
+</section>
+
+<%- include("partials/footer.ejs") %>

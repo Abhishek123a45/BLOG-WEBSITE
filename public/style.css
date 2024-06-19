@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root{
+    --text: #313030;
+    --primary-color:#B3FFAE;
+    --secondary-color:#E6FF81;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+
+a{
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: whitesmoke;
+}
+
+.logo{
+    height: 40px;
+}
+
+.logoBackground{
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.logoBackground:hover{
+    color: #313030;
+}
+
+nav{
+    position: relative;
+}
+
+
+.footer-container{
+    text-align: center;
+    background-color: var(--text);
+    color: white;
+    padding: 20px;
+}
+
+.about-container{
+    min-height: 80vh;
+}
+
+/* .about-container .container-fluid{
+    padding-left: 80px;
+    margin-top: 50px;
+} */
+
+.about-para{
+    font-size: 20px;
+    line-height: 2;
+}
+
+.home-container{
+    margin-top: 180px;
+    margin-bottom: 150px;
+    min-height: 70vh;
+    padding: 1rem;
+}
+
+.contact-container{
+    min-height: 80vh;
+}
+
+.contact-container .container-fluid{
+    padding-left: 80px;
+    margin-top: 50px;
+}
+
+.articles-container{
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 70px;
+    column-gap: 20px;
+}
+
+.article{
+    padding-block: 50px;
+    padding-inline: 20px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-heading{
+    font-size: 2.2rem;
+}
+
+.article-para{
+    font-size: 1.2rem;
+}
+
+.article button{
+    padding-inline: 20px;
+    padding-block: 5px;
+    color: white;
+    background-color: var(--text);
+    font-size: 1rem;
+}
+
+
+.homepageBackground{
+    margin-top: 40px;
+    height: 60vh;
+    width: 100%;
+    background-image: url('images/angele-kamp-Ps0r8xOpnKI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homepageBackground h1{
+    font-size: 3rem;
+}
+
+.homepageBackground p{
+    font-weight: 200;
+}
+
+.user{
+    position: absolute;
+    top: 100px;
+    right: 2%;
+    width: 20rem;
+    height: 80vh;
+    background-color: var(--primary-color);
+    display: none;
+    border-radius: 5px;
+}
+
+.container-user{
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-top: 6%;
+}
+
+.user-text{
+    font-size: 1.2rem;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.form-contact input,textarea{
+    width: 50%;
+}
+
+.submit-contact{
+    background-color: var(--primary-color);
+    color: var(--text);
+}
